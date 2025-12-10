@@ -1,0 +1,23 @@
+$btn-bg: rgba(185, 39, 112, 1);
+$btn-color: #fff;
+$btn-transition-speed: 0.25s;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-large: 1440px;
+:root {
+  --color-dark: rgba(0, 0, 0, 1);
+  --color-dark-alt: rgba(80, 78, 74, 1);
+  --color-light: rgba(255, 255, 255, 1);
+  --color-accent: rgba(185, 39, 112, 1);
+  --color-gray: rgba(114, 113, 116, 1);
+  --color-gray-opacity: rgba(114, 113, 116, 0.2);
+  --color-gray-alt: rgba(231, 232, 233, 1);
+  --shadow: 0 20px 0 0 rgba(193, 199, 212, 0.702);
+  --font-family-base: "Montserrat", sans-serif;
+  --container-width: 1300px;
+  --container-padding-x: 200px;
+  --section-padding-y: 60px;
+  --input-height: 38px;
+  --button-height: 55px;
+  --transition-duration: 0.2s;
+}

@@ -1,0 +1,164 @@
+<header class="header">
+  <div class="header__top container">
+    <div class="header__icons">
+      <a href="" class="header__icon icon">
+        <img
+          src="/src/assets/images/facebook.svg"
+          alt="Facebook"
+          class="icon__image"
+          width="20"
+          height="20"
+          loading="lazy"
+        />
+      </a>
+      <a href="" class="header__icon icon">
+        <img
+          src="/src/assets/images/twitter.svg"
+          alt="Twitter"
+          class="icon__image"
+          width="20"
+          height="20"
+          loading="lazy"
+        />
+      </a>
+      <a href="" class="header__icon icon">
+        <img
+          src="/src/assets/images/instagram.svg"
+          alt="Instagram"
+          class="icon__image"
+          width="20"
+          height="20"
+          loading="lazy"
+        />
+      </a>
+    </div>
+
+    <a href="/src/index.html" class="header__logo logo">
+      <img
+        src="/src/assets/images/logo.svg"
+        alt="Best shop"
+        class="logo__image"
+        width="226"
+        height="37"
+        loading="lazy"
+      />
+    </a>
+
+    <div class="header__actions">
+      <a href="" class="header__action action" id="logIn">
+        <img
+          src="/src/assets/images/user.svg"
+          alt="User"
+          class="action__image"
+          width="30"
+          height="30"
+          loading="lazy"
+        />
+      </a>
+      <a href="" class="header__action action header__cart" id="cart">
+        <img
+          src="/src/assets/images/shopping-cart.svg"
+          alt="Cart"
+          class="action__image"
+          width="30"
+          height="30"
+          loading="lazy"
+        />
+        <span class="header__cart-count">0</span>
+      </a>
+    </div>
+  </div>
+  <div class="header__bottom container">
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="/src/index.html" class="header__menu-link" data-page="home"
+            >Home</a
+          >
+        </li>
+        <li class="header__menu-item header__menu-item--catalog">
+          <a
+            href="/src/html/catalog.html"
+            class="header__menu-link"
+            data-page="catalog"
+          >
+            Catalog
+          </a>
+
+          <div class="header__filters-dropdown">
+            <div class="filters form">
+              <div class="filters__options">
+                <div class="filters__filter">
+                  <p class="filters__title">Size</p>
+                  <select class="filters__select" id="filterSize">
+                    <option value="">Choose Size</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="S-L">S-L</option>
+                    <option value="S, M, XL">S, M, XL</option>
+                  </select>
+                </div>
+
+                <div class="filters__filter">
+                  <p class="filters__title">Color</p>
+                  <select class="filters__select" id="filterColor">
+                    <option value="">Choose Color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="grey">Grey</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="pink">Pink</option>
+                  </select>
+                </div>
+
+                <div class="filters__filter">
+                  <p class="filters__title">Category</p>
+                  <select class="filters__select" id="filterCategory">
+                    <option value="">Choose Category</option>
+                    <option value="carry-ons">Carry-ons</option>
+                    <option value="suitcases">Suitcases</option>
+                    <option value="luggage sets">Luggage sets</option>
+                    <option value="kids' luggage">Kids' luggage</option>
+                  </select>
+                </div>
+
+                <div class="filters__checkbox">
+                  <p class="filters__title">Sales</p>
+                  <div class="checkbox">
+                    <input type="checkbox" id="salesStatus" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="filters__buttons">
+                <button class="btn" id="clearFilters">CLEAR FILTERS</button>
+                <button class="btn" id="hideFilters">HIDE FILTERS</button>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="header__menu-item">
+          <a
+            href="/src/html/about.html"
+            class="header__menu-link"
+            data-page="about"
+            >About Us</a
+          >
+        </li>
+        <li class="header__menu-item">
+          <a
+            href="/src/html/contact.html"
+            class="header__menu-link"
+            data-page="contact"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

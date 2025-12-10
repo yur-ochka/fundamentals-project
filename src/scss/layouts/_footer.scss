@@ -1,0 +1,157 @@
+.footer {
+  font-size: 15px;
+  padding: 3rem 0 2rem;
+  background-color: var(--color-light-gray);
+
+  &__icon {
+    a {
+      img {
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  &__benefits {
+    background: linear-gradient(
+      to bottom,
+      var(--color-dark-alt) 0px,
+      var(--color-dark-alt) 192px
+    );
+    height: 192px;
+    margin-bottom: 5rem;
+
+    &-title {
+      color: var(--color-light);
+      font-size: 19px;
+      font-weight: 700;
+      padding-top: 2rem;
+    }
+
+    &-items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    &-item {
+      display: flex;
+      gap: 12px;
+      color: var(--color-light);
+      max-width: 300px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    align-items: start;
+    padding-bottom: 50px;
+  }
+
+  &__about {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 639px;
+    justify-self: start;
+  }
+
+  &__shipping {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 650px;
+    justify-self: start;
+  }
+
+  &__contact {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 100%;
+    max-width: 450px;
+    justify-self: end;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 15px;
+  }
+
+  &__columns {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__column {
+    flex: 1;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &-item {
+      margin-bottom: 12px;
+      color: var(--color-dark);
+      transition: color var(--transition-duration) ease;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+  }
+
+  &__contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-top: 73px;
+  }
+
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__contact-icon {
+    font-size: 16px;
+  }
+
+  &__contact-text {
+    color: var(--color-dark);
+  }
+
+  &__contact-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bottom {
+    border-top: 1px solid var(--color-gray-opacity);
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__copyright {
+    &-text {
+      color: var(--color-gray);
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

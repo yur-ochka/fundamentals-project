@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="catalog container">
+      <div class="catalog__toprow">
+        <p class="catalog__toprow-showing">Showing</p>
+        <div class="catalog__toprow-inputs form">
+          <div class="catalog__sort select">
+            <select id="catalogSort">
+              <option value="default">Default Sorting</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A → Z</option>
+              <option value="name-desc">Name: Z → A</option>
+              <option value="popularity-asc">Popularity: Low to High</option>
+              <option value="popularity-desc">Popularity: High to Low</option>
+              <option value="rating-asc">Rating: Low to High</option>
+              <option value="rating-desc">Rating: High to Low</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            class="catalog__search"
+            id="catalogSearch"
+            placeholder="Search Models"
+          />
+        </div>
+      </div>
+
+      <div class="catalog__items"></div>
+      <div class="catalog__bestsets">
+        <p class="catalog__bestsets-title">Top Best Sets</p>
+        <div class="catalog__bestsets-items">
+          <div class="catalog__bestsets-item">
+            <img
+              src="..\assets\images\sets1.svg"
+              alt="Red suitcases"
+              class="catalog__bestsets-item-image"
+              width="87"
+              height="97"
+              loading="lazy"
+            />
+            <div class="catalog__bestsets-item-info">
+              <p class="catalog__bestsets-item-name">
+                Primis in faucibus aenean laoreet rhoncus ipsum eget.
+              </p>
+              <img
+                src="..\assets\images\stars.svg"
+                alt="Rating"
+                class="catalog__bestsets-item-rating"
+                width="80"
+                height="11"
+                loading="lazy"
+              />
+              <p class="catalog__bestsets-item-price">$1000</p>
+            </div>
+          </div>
+          <div class="catalog__bestsets-item">
+            <img
+              src="..\assets\images\sets1.svg"
+              alt="Red suitcases"
+              class="catalog__bestsets-item-image"
+              width="87"
+              height="97"
+              loading="lazy"
+            />
+            <div class="catalog__bestsets-item-info">
+              <p class="catalog__bestsets-item-name">
+                Primis in faucibus aenean laoreet rhoncus ipsum eget.
+              </p>
+              <img
+                src="..\assets\images\stars.svg"
+                alt="Rating"
+                class="catalog__bestsets-item-rating"
+                width="80"
+                height="11"
+                loading="lazy"
+              />
+              <p class="catalog__bestsets-item-price">$1000</p>
+            </div>
+          </div>
+          <div class="catalog__bestsets-item">
+            <img
+              src="..\assets\images\sets1.svg"
+              alt="Red suitcases"
+              class="catalog__bestsets-item-image"
+              width="87"
+              height="97"
+              loading="lazy"
+            />
+            <div class="catalog__bestsets-item-info">
+              <p class="catalog__bestsets-item-name">
+                Primis in faucibus aenean laoreet rhoncus ipsum eget.
+              </p>
+              <img
+                src="..\assets\images\stars.svg"
+                alt="Rating"
+                class="catalog__bestsets-item-rating"
+                width="80"
+                height="11"
+                loading="lazy"
+              />
+              <p class="catalog__bestsets-item-price">$1000</p>
+            </div>
+          </div>
+          <div class="catalog__bestsets-item">
+            <img
+              src="..\assets\images\sets1.svg"
+              alt="Red suitcases"
+              class="catalog__bestsets-item-image"
+              width="87"
+              height="97"
+              loading="lazy"
+            />
+            <div class="catalog__bestsets-item-info">
+              <p class="catalog__bestsets-item-name">
+                Primis in faucibus aenean laoreet rhoncus ipsum eget.
+              </p>
+              <img
+                src="..\assets\images\stars.svg"
+                alt="Rating"
+                class="catalog__bestsets-item-rating"
+                width="80"
+                height="11"
+                loading="lazy"
+              />
+              <p class="catalog__bestsets-item-price">$1000</p>
+            </div>
+          </div>
+          <div class="catalog__bestsets-item">
+            <img
+              src="..\assets\images\sets1.svg"
+              alt="Red suitcases"
+              class="catalog__bestsets-item-image"
+              width="87"
+              height="97"
+              loading="lazy"
+            />
+            <div class="catalog__bestsets-item-info">
+              <p class="catalog__bestsets-item-name">
+                Primis in faucibus aenean laoreet rhoncus ipsum eget.
+              </p>
+              <img
+                src="..\assets\images\stars.svg"
+                alt="Rating"
+                class="catalog__bestsets-item-rating"
+                width="80"
+                height="11"
+                loading="lazy"
+              />
+              <p class="catalog__bestsets-item-price">$1000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__pagination"></div>
+      <div class="catalog__stats"></div>
+      <div class="catalog__stats1"></div>
+    </section>
+    <div id="footer"></div>
+    <script src="../js/layout.js"></script>
+
+    <script src="../js/catalog.js"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

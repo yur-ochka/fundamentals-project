@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section class="contact">
+      <div class="contact__hero">
+        <h1 class="contact__hero-title">Contact Us</h1>
+        <p class="contact__hero-subtitle">
+          Duis vestibulum elit vel neque pharetra vulputate. Duis rutrum non
+          risus in imperdiet.
+        </p>
+      </div>
+
+      <div class="container">
+        <section class="contact__info">
+          <article class="contact__info-card">
+            <img
+              src="../assets/images/location.svg"
+              alt="Location"
+              class="contact__info-card-icon"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+            <p class="contact__info-card-title">Our Location</p>
+            <p class="contact__info-card-text">
+              1234 NW Bobcat Lane, St. Robert, MO 65584-5678
+            </p>
+          </article>
+
+          <article class="contact__info-card">
+            <img
+              src="../assets/images/operatingTime.svg"
+              alt="Operating Time"
+              class="contact__info-card-icon"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+            <p class="contact__info-card-title">Operating Time</p>
+            <p class="contact__info-card-text">
+              Monday - Friday: 9am - 6 pm <br />Weekends: 10:30 am - 6pm
+            </p>
+          </article>
+
+          <article class="contact__info-card">
+            <img
+              src="../assets/images/email.svg"
+              alt="Our Email"
+              class="contact__info-card-icon"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+            <p class="contact__info-card-title">Our Email</p>
+            <p class="contact__info-card-text">
+              best@shop.com info@bestshop.com
+            </p>
+          </article>
+
+          <article class="contact__info-card">
+            <img
+              src="../assets/images/callUs.svg"
+              alt="Call Us"
+              class="contact__info-card-icon"
+              width="62"
+              height="62"
+              loading="lazy"
+            />
+            <p class="contact__info-card-title">Call Us</p>
+            <p class="contact__info-card-text">
+              (268)142-8413 <br />
+              (760)265-2917
+            </p>
+          </article>
+        </section>
+
+        <section class="contact__feedback">
+          <img
+            src="../assets/images/feedback.png"
+            alt="Feedback"
+            class="contact__feedback-image"
+            width="637"
+            height="700"
+            loading="lazy"
+          />
+
+          <form action="" class="contact__form form">
+            <p class="contact__form-title">
+              Your Feedback Is Much Appreciated!
+            </p>
+            <p class="contact__form-subtitle">
+              We will contact you when you complete the following form!
+            </p>
+
+            <label for="name" class="contact__form-label">Your Name *</label>
+            <input
+              id="name"
+              type="text"
+              class="contact__form-input"
+              placeholder="Name"
+            />
+
+            <label for="email" class="contact__form-label"
+              >Your Email Address *</label
+            >
+            <input
+              id="email"
+              type="text"
+              class="contact__form-input"
+              placeholder="Email"
+            />
+
+            <label for="topic" class="contact__form-label">Topic *</label>
+            <input
+              id="topic"
+              type="text"
+              class="contact__form-input"
+              placeholder="Topic"
+            />
+
+            <label for="message" class="contact__form-label"
+              >Your Message *</label
+            >
+            <textarea
+              id="message"
+              class="contact__form-textarea"
+              placeholder="Message..."
+            ></textarea>
+
+            <button id="submit" type="submit" class="contact__form-button btn">
+              Send
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script src="../js/layout.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

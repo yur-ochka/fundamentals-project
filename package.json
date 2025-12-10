@@ -1,0 +1,37 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "description": "Capstone Project Template ",
+  "repository": {
+    "type": "git",
+    "url": "https://autocode.git.epam.com/campus_javascript/capstone-project/project-template.git"
+  },
+  "license": "ISC",
+  "author": "Illia Yurchenko",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "lint:js": "eslint src/js/**/*.js",
+    "lint:scss": "stylelint \"src/scss/**/*.scss\"",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "sass:watch": "sass src/scss:dist --watch --no-source-map",
+    "sass:build": "sass src/scss:dist --no-source-map --style=compressed",
+    "server": "live-server --port=3000 --open=src/index.html",
+    "dev": "concurrently \"npm run lint\" \"npm run sass:watch\" \"npm run server\"",
+    "build": "npm run sass:build",
+    "clean": "rm -rf dist/*"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.1",
+    "@eslint/markdown": "^7.5.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.93.3",
+    "stylelint": "^16.26.0",
+    "stylelint-config-standard-scss": "^16.0.0",
+    "stylelint-scss": "^6.12.1"
+  }
+}

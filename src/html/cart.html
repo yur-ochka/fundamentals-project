@@ -1,0 +1,53 @@
+<div class="cart-overlay" id="cartOverlay">
+  <div class="cart-modal">
+    <div class="cart__hero">
+      <h1 class="cart__hero-title">My Cart</h1>
+    </div>
+    <div class="cart__main container">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>IMAGE</th>
+            <th>PRODUCT NAME</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>TOTAL</th>
+            <th>DELETE</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="cart__buttom">
+        <div class="cart__buttons">
+          <button id="continue-btn" class="cart__continueBtn btn">
+            CONTINUE SHOPPING
+          </button>
+          <button id="clear-btn" class="cart__clearBtn btn">
+            CLEAR SHOPPING CART
+          </button>
+        </div>
+        <div class="cart__checkout">
+          <div class="cart__checkout-line">
+            <p class="cart__checkout-subtitle">Sub Total</p>
+            <p id="checkout-subtotal" class="cart__checkout-money"></p>
+          </div>
+          <div class="cart__checkout-line">
+            <p class="cart__checkout-subtitle">Discount</p>
+            <p id="checkout-discount" class="cart__checkout-money"></p>
+          </div>
+          <div class="cart__checkout-line">
+            <p class="cart__checkout-subtitle">Shipping</p>
+            <p id="checkout-shipping" class="cart__checkout-money">$30</p>
+          </div>
+          <div class="cart__checkout-line">
+            <p class="cart__checkout-title">Total</p>
+            <p id="checkout-total" class="cart__checkout-totalmoney"></p>
+          </div>
+          <button id="checkout-btn" class="cart__checkout-button btn">
+            CHECKOUT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="product container">
+      <div class="product__main">
+        <div class="product__photos">
+          <div id="mainPhoto"></div>
+          <div class="product__photos-thumbnails">
+            <div id="thumbnail1"></div>
+            <div id="thumbnail2"></div>
+            <div id="thumbnail3"></div>
+            <div id="thumbnail4"></div>
+          </div>
+        </div>
+        <div class="product__info">
+          <h3 class="product__info-title" id="title">placeholder</h3>
+          <div class="product__info-rating">           
+             <div id="product__info-rating-display"></div>
+          
+          </div>
+          <h4 class="product__info-price" id="price">placeholder</h4>
+          <p class="product__info-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias unde
+            ipsum itaque laborum? Eos molestiae soluta eum numquam aliquid! Rem
+            recusandae corrupti natus ab iusto exercitationem repellat debitis,
+            praesentium, minima animi sed! Maiores corporis quo magnam harum,
+            ducimus, error numquam quia neque vero iusto optio! Sed saepe natus
+            eos odio.<br /><br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Labore, consequatur quas ab, maxime aperiam
+            dolorum vero iusto aliquid neque illum laborum sunt quae id fugiat
+            harum officia at molestias iure!
+          </p>
+
+          <div class="product__info-inputs form">
+            <div class="product__info-size select">
+              <p class="product__info-label">Size</p>
+              <select class="product__info-select" id="productSize"></select>
+            </div>
+            <div class="product__info-color select">
+              <p class="product__info-label">Color</p>
+              <select class="product__info-select" id="productColor"></select>
+            </div>
+            <div class="product__info-category select">
+              <p class="product__info-label">Category</p>
+              <select
+                class="product__info-select"
+                id="productCategory"
+              ></select>
+            </div>
+            <div class="product__info-quantity">
+              <div class="quantity-selector">
+                <div class="quantity-input">
+                  <button type="button" class="quantity-btn decrement">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                    max="99"
+                  />
+                  <button type="button" class="quantity-btn increment">
+                    +
+                  </button>
+                </div>
+              </div>
+              <button class="product__info-addToCart btn" id="addToCartButton">
+                Add to Cart
+              </button>
+            </div>
+            <img
+              src="..\assets\images\Payments.svg"
+              alt="Payment"
+              class="product__info-payment-image"
+              width="425"
+              height="30"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="product__texts">
+        <div class="product__texts-choose">
+          <p id="details" class="product__texts-title active">DETAILS</p>
+          <p id="reviews" class="product__texts-title">REVIEWS</p>
+          <p id="shippingPolocy" class="product__texts-title">
+            SHIPPING POLICY
+          </p>
+        </div>
+        <div class="product__texts-block">
+          <div class="product__texts-details">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            ratione sunt laudantium ullam, dolorum culpa voluptatem, repellendus
+            inventore accusantium quibusdam numquam assumenda recusandae
+            corrupti porro beatae perferendis quia doloremque atque. Autem illo
+            incidunt quasi repellendus corrupti nam iure. Tempora odit alias
+            voluptate quam recusandae dignissimos consequatur tempore, iste
+            nostrum similique soluta neque error ducimus quod, dolor quidem
+            beatae amet facere perferendis nemo repudiandae asperiores corporis
+            cupiditate. Amet quos voluptatum pariatur quibusdam dolore dolores
+            nam maxime aut consectetur, corrupti sint laborum vel unde impedit
+            dolorem nobis incidunt neque. In iusto deserunt perferendis neque.
+            Beatae quasi repellendus quidem quaerat illum officia dolores?
+            <br /><br />
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
+            quas sapiente. Mollitia accusantium cum corporis quaerat molestiae
+            dolor inventore dicta suscipit magni qui minima, dignissimos beatae
+            officiis harum explicabo vitae in et placeat aliquid earum
+            distinctio. Doloremque, quia assumenda saepe accusantium excepturi
+            necessitatibus ratione veritatis dicta omnis cupiditate doloribus
+            cumque.
+          </div>
+          <div class="product__texts-reviews">
+            <div class="product__texts-reviews-left">
+              <p id="reviewsCount" class="product__texts-title">
+                1 review for Global Explorer Max Comfort Suitcase Pro
+              </p>
+              <div class="product__texts-review">
+                <div class="product__texts-review-person">
+                  <img
+                    src="..\assets\images\reviewAvatar.svg"
+                    alt="Person"
+                    class="product__texts-review-image"
+                    width="46"
+                    height="46"
+                    loading="lazy"
+                  />
+                  <p class="product__texts-review-name">Ella Harper</p>
+                  <p class="product__texts-review-date">/ June 11, 2025</p>
+                </div>
+                <div class="product__texts-reviews-rating">           
+             <div id="product__texts-review-display"></div>        
+          </div>
+              </div>
+              <p class="product__texts-review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci, vero suscipit nihil totam quae molestias laudantium
+                accusamus tempora consectetur maxime!
+              </p>
+            </div>
+            <div class="product__texts-reviews-right form">
+              <p class="product__texts-title">Add Review</p>
+              <p class="product__texts-subtitle">
+                Your email address won’t be shared with anybody. Required fields
+                have the symbol *
+              </p>
+              <div class="product__texts-review-rating">
+                <p class="product__texts-title">RATE PRODUCT</p>
+                
+              </div>
+                <textarea
+                  id="review"
+                  class="product__texts-reviews-right-textarea textarea"
+                  placeholder="Your Review*"
+                ></textarea>
+                <div class="product__texts-reviews-right-inputs">
+                  <input
+                    id="name"
+                    type="text"
+                    class="product__texts-reviews-right-input input"
+                    placeholder="Your Name*"
+                  />
+                  <input
+                    id="email"
+                    type="text"
+                    class="product__texts-reviews-right-input input"
+                    placeholder="Your Email*"
+                  />
+                </div>
+                <div class="product__texts-reviews-right-checkbox checkbox">
+                <input type="checkbox" id="save-me" name="save-me">
+                <label for="save-me">Save my name, email, and website in this browser for when I leave another comment.</label>
+                </div>
+                <button id="submit-btn" class="product__texts-reviews-right-submit btn">SUBMIT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__mayAlsoLike">
+        <h3 class="product__mayAlsoLike-title">You May Also Like</h3>
+        <div class="product__mayAlsoLike-viewport">
+            <div id="mayAlsoLike" class="product__mayAlsoLike-cards"></div>
+          </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script src="../js/layout.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/cart.js"></script>
+
+  </body>
+</html>

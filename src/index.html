@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best shop</title>
+    <link rel="stylesheet" href="../dist/css/main.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section class="homepage">
+      <div class="homepage__hero container">
+        <div class="homepage__hero-top">
+          <div class="homepage__hero-info">
+            <h1 class="homepage__hero-title">
+              Smart Styles for Every Destination
+            </h1>
+            <p class="homepage__hero-subtitle">
+              Phasellus risus turpis, pretium sit amet magna non, molestie
+              ultricies enim. Nullam pulvinar felis at metus.
+            </p>
+            <button class="btn">View All Items</button>
+          </div>
+          <img
+            src="..\src\assets\images\homepageSuitcase.png"
+            alt="Suitcase"
+            class="homepage__hero-image"
+            width="100%"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="homepage__hero-bottom">
+          <div class="homepage__hero-bottom-leftcard">
+            <div class="homepage__hero-speaker">
+              <img
+                src="..\src\assets\images\speaker.svg"
+                alt="Speaker"
+                class="homepage__hero-speaker-image"
+                width="85"
+                height="93"
+                loading="lazy"
+              />
+              <p class="homepage__hero-speaker-name">Lillian Bennett</p>
+              <p class="homepage__hero-speaker-position">
+                Chief Marketing Officer
+              </p>
+            </div>
+            <h2 class="homepage__hero-title">Aliquam Faucibus Odionecom.</h2>
+            <p class="homepage__hero-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum
+              deleniti labore maiores perferendis, veniam est? Rem doloribus,
+              vitae placeat unde sed, tempore eius, maiores necessitatibus iure
+              nihil similique? <br /><br />Totam ab asperiores architecto cum
+              deserunt.
+            </p>
+          </div>
+          <div class="homepage__hero-bottom-rightcard">
+            <h2 class="homepage__hero-title-white">25 % Discount</h2>
+            <p class="homepage__hero-subtitle-white">
+              Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut
+              imperdiet et leo in vulputate.
+            </p>
+            <button class="homepage__hero-button btn">Get Discount</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="homepage__travelSuicases">
+          <h2 class="homepage__travelSuicases-title">Travel suitcases</h2>
+          <p class="homepage__travelSuicases-subtitle">
+            Duis vestibulum elit vel neque pharetra
+          </p>
+          <div class="homepage__travelSuicases-cards">
+            <div
+              class="homepage__travelSuicases-card homepage__travelSuicases-card--1"
+            >
+              <p class="homepage__travelSuicases-card-title">
+                Duis vestibulum elit vel neque.
+              </p>
+              <p class="homepage__travelSuicases-card-subtitle">
+                Duis vestibulum vel neque pharetra vulputate. Quisque
+                scelerisque nisi.
+              </p>
+            </div>
+            <div
+              class="homepage__travelSuicases-card homepage__travelSuicases-card--2"
+            >
+              <p class="homepage__travelSuicases-card-title">
+                Duis vestibulum elit vel neque.
+              </p>
+              <p class="homepage__travelSuicases-card-subtitle">
+                Duis vestibulum vel neque pharetra vulputate. Quisque
+                scelerisque nisi.
+              </p>
+            </div>
+            <div
+              class="homepage__travelSuicases-card homepage__travelSuicases-card--3"
+            >
+              <p class="homepage__travelSuicases-card-title">
+                Duis vestibulum elit vel neque.
+              </p>
+              <p class="homepage__travelSuicases-card-subtitle">
+                Duis vestibulum vel neque pharetra vulputate. Quisque
+                scelerisque nisi.
+              </p>
+            </div>
+            <div
+              class="homepage__travelSuicases-card homepage__travelSuicases-card--4"
+            >
+              <p class="homepage__travelSuicases-card-title">
+                Duis vestibulum elit vel neque.
+              </p>
+              <p class="homepage__travelSuicases-card-subtitle">
+                Duis vestibulum vel neque pharetra vulputate. Quisque
+                scelerisque nisi.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="homepage__selected">
+          <h2 class="homepage__selected-title">Selected Products</h2>
+          <p class="homepage__selected-subtitle">
+            Duis vestibulum elit vel neque pharetra
+          </p>
+          <button id="selectedPrevBtn" class="btn-carousel">←</button>
+          <div class="homepage__selected-viewport">
+            <div id="catalogSelected" class="homepage__selected-cards"></div>
+          </div>
+          <button id="selectedNextBtn" class="btn-carousel">→</button>
+        </div>
+        <section class="about__banner">
+          <div class="about__banner-left">
+            <p class="about__banner-discount">50%</p>
+            <p class="about__banner-text">
+              Curabitur vulputate arcu odio, ac facilisis diam.
+            </p>
+          </div>
+
+          <div class="about__banner-right">
+            <h2 class="about__banner-title">Offer Of The Month</h2>
+            <p class="about__banner-subtitle">
+              Curabitur vulputate arcu odio, ac facilisis diam accumsan ut. Ut
+              imperdiet et leo in vulputate.
+            </p>
+            <button class="about__banner-button btn">Get offer today</button>
+          </div>
+        </section>
+        <div class="homepage__arrivals">
+          <h2 class="homepage__arrivals-title">New Products Arrival</h2>
+          <p class="homepage__arrivals-subtitle">
+            Duis vestibulum elit vel neque pharetra
+          </p>
+          <button id="arrivalsprevBtn" class="btn-carousel">←</button>
+
+          <div class="homepage__arrivals-viewport">
+            <div id="catalogArrivals" class="homepage__arrivals-cards"></div>
+          </div>
+
+          <button id="arrivalsnextBtn" class="btn-carousel">→</button>
+        </div>
+        <div class="homepage__customers">
+          <h2 class="homepage__customers-title">Our Grateful Customers</h2>
+          <p class="homepage__customers-subtitle">
+            Duis vestibulum elit vel neque pharetra
+          </p>
+          <div class="homepage__customers-cards">
+            <div class="homepage__customers-card">
+              <img
+                src="..\src\assets\images\customer1.svg"
+                alt="Customer"
+                class="homepage__customers-card-image"
+                width="98"
+                height="98"
+                loading="lazy"
+              />
+              <p class="homepage__customers-card-comment">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                ea quis non soluta tempore ipsum aliquam eligendi deleniti,
+                nesciunt eveniet.
+              </p>
+              <p class="homepage__customers-card-name">Ethan Wade, New York</p>
+            </div>
+            <div class="homepage__customers-card">
+              <img
+                src="..\src\assets\images\customer2.svg"
+                alt="Customer"
+                class="homepage__customers-card-image"
+                width="98"
+                height="98"
+                loading="lazy"
+              />
+              <p class="homepage__customers-card-comment">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                ea quis non soluta tempore ipsum aliquam eligendi deleniti,
+                nesciunt eveniet.
+              </p>
+              <p class="homepage__customers-card-name">
+                Jane Reyes, California
+              </p>
+            </div>
+            <div class="homepage__customers-card">
+              <img
+                src="..\src\assets\images\customer3.svg"
+                alt="Customer"
+                class="homepage__customers-card-image"
+                width="98"
+                height="98"
+                loading="lazy"
+              />
+              <p class="homepage__customers-card-comment">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+                ea quis non soluta tempore ipsum aliquam eligendi deleniti,
+                nesciunt eveniet.
+              </p>
+              <p class="homepage__customers-card-name">Erica Banks, Miami</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/layout.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+@use "sass:color";
+
+.btn {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  background-color: $btn-bg;
+  color: $btn-color;
+  @include btn-transition;
+
+  &:hover {
+    background-color: color.adjust($btn-bg, $lightness: -8%);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    background-color: color.adjust($btn-bg, $lightness: 15%);
+    cursor: not-allowed;
+  }
+
+  &-carousel {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background: var(--color-accent);
+    border: 0;
+    width: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-light);
+    @include btn-transition;
+    &:hover {
+      background-color: color.adjust($btn-bg, $lightness: -8%);
+    }
+  }
+
+  @include respond(tablet) {
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+  }
+
+  @include respond(desktop) {
+    font-size: 1.1rem;
+    padding: 0.7em 1.4em;
+  }
+
+  @include respond(large) {
+    font-size: 1.25rem;
+    padding: 0.8em 1.6em;
+    min-width: 200px;
+    min-height: 60px;
+  }
+}
