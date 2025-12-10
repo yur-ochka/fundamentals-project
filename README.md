@@ -15,7 +15,3 @@ npm install
 ```bash
 npm run dev
 ```
-
-### Checklist:
-
-57/64
